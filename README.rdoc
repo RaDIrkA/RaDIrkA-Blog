@@ -5,6 +5,6 @@
 
 This is the first application Moj:Blog :::: by [Blaz Sajovic] "RaDIrkA"
 
-(http://spletko.eu/) by [RaDIrka]
+(http://spletko.eu) by [RaDIrkA]
 
-# [Info](info@spletko.eu/) 
+# Info (info@spletko.eu) 
