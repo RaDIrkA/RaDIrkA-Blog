@@ -21,6 +21,9 @@ class PostsControllerTest < ActionController::TestCase
       post :create, post: { text: @post.text, title: @post.title }
     end
 
+
+
+
     assert_redirected_to post_path(assigns(:post))
   end
 
@@ -45,5 +48,20 @@ class PostsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to posts_path
+
+  def create
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.build(params[:comment_id])
+    @comment.save
+
+    redirect_to @post
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+
+    redirect_to @comment.post
+
   end
 end
