@@ -1,0 +1,8 @@
+Wed, 24 Jul 2013 22:55:07 +0200
+README.rdoc	Wed, 24 Jul 2013 20:10:16 +0200
+app/controllers/application_controller.rb	Wed, 24 Jul 2013 20:10:16 +0200
+app/controllers/posts_controller.rb	Wed, 24 Jul 2013 20:11:09 +0200
+app/helpers/application_helper.rb	Wed, 24 Jul 2013 20:10:16 +0200
+app/helpers/posts_helper.rb	Wed, 24 Jul 2013 20:11:09 +0200
+app/models/comment.rb	Wed, 24 Jul 2013 20:12:34 +0200
+app/models/post.rb	Wed, 24 Jul 2013 20:11:09 +0200
