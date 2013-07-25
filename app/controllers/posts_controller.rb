@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  
 
-  # GET /posts
-  # GET /posts.json
+
+   #GET /posts
+   #GET /posts.json
   def index
     @posts = Post.all
 
@@ -12,8 +14,8 @@ class PostsController < ApplicationController
         format.atom
   end
 
-  # GET /posts/1
-  # GET /posts/1.json
+   #GET /posts/1
+   #GET /posts/1.json
   def show
   end
 
@@ -66,9 +68,9 @@ class PostsController < ApplicationController
     end
   end
 
-  private
+  #private
     # Use callbacks to share common setup or constraints between actions.
-    def set_post
+   def set_post
       @post = Post.find(params[:id])
     end
 
@@ -76,5 +78,5 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :text)
     end
-end
+  end
 end

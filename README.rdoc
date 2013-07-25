@@ -5,6 +5,42 @@
 
 This is the first application Moj_Blog :::: by [Blaz Sajovic] "RaDIrkA"
 
+# status -
+
+	 1) Error:
+CommentsControllerTest#test_should_get_create:
+ActiveRecord::RecordNotFound: Couldn't find Post without an ID
+    app/controllers/comments_controller.rb:3:in `create'
+    test/controllers/comments_controller_test.rb:5:in `block in <class:CommentsControllerTest>'
+
+  2) Error:
+CommentsControllerTest#test_should_get_destroy:
+ActiveRecord::RecordNotFound: Couldn't find Comment without an ID
+    app/controllers/comments_controller.rb:11:in `destroy'
+    test/controllers/comments_controller_test.rb:10:in `block in <class:CommentsControllerTest>'
+
+  3) Error:
+PostsControllerTest#test_should_create_post:
+AbstractController::ActionNotFound: The action 'create' could not be found for PostsController
+    test/controllers/posts_controller_test.rb:21:in `block (2 levels) in <class:PostsControllerTest>'
+    test/controllers/posts_controller_test.rb:20:in `block in <class:PostsControllerTest>'
+
+  4) Error:
+PostsControllerTest#test_should_destroy_post:
+AbstractController::ActionNotFound: The action 'destroy' could not be found for PostsController
+    test/controllers/posts_controller_test.rb:44:in `block (2 levels) in <class:PostsControllerTest>'
+    test/controllers/posts_controller_test.rb:43:in `block in <class:PostsControllerTest>'
+
+  5) Error:
+PostsControllerTest#test_should_get_edit:
+NameError: undefined local variable or method `set_post' for #<PostsController:0xa1f2660>
+    test/controllers/posts_controller_test.rb:33:in `block in <class:PostsControllerTest>'
+
+9 tests, 6 assertions, 0 failures, 5 errors, 0 skips
+	
+
+
 (http://spletko.eu) by [RaDIrkA]
 
 # Info (info@spletko.eu) ::::
+
